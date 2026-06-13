@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #111;
+    color: #fff;
+}
+
+.navbar input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px;
+    color: #fff;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+.filters {
+    text-align: center;
+    margin: 20px;
+}
+
+.filters button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.filters button:hover {
+    transform: translateY(-2px);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #1d4ed8;
+}
+
+.dark {
+    background-color: #0f172a;
+    color: #fff;
+}
+
+.dark .card {
+    background-color: #1e293b;
+    color: #fff;
+}
+
+.dark .navbar {
+    background-color: #020617;
+}
+
+.dark .card button {
+    background-color: #3b82f6;
+}
